@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 28, 2014 12:48:14 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.hiber.Venues" table="venues" catalog="team9">
+        <id name="venueid" type="int">
+            <column name="venueid" />
+            <generator class="assigned" />
+        </id>
+        <property name="latitude" type="string">
+            <column name="latitude" />
+        </property>
+        <property name="longitude" type="string">
+            <column name="longitude" />
+        </property>
+    </class>
+    
+    <class name="com.hiber.Users" table="users" catalog="team9">
+        <id name="userid" type="int">
+            <column name="userid" />
+            <generator class="assigned" />
+        </id>
+        <property name="latitude" type="string">
+            <column name="latitude" />
+        </property>
+        <property name="longitude" type="string">
+            <column name="longitude" />
+        </property>
+    </class>
+    
+</hibernate-mapping>
